@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+/*hero-container*/
+
+#hero.container {
+    background-image: url('/assets/fc45ad_4b6a42c62afb4389b11e4f3c0b7890db_mv2.webp');
+    background-size: cover;
+}
+
+#hero.container .col {
+    background: #00000055;
+    padding: 10rem 2.5rem 3rem;
+}
+
+#hero.container .headline {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+#hero.container .title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 1rem 0;
+}
+
+#hero.container .intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#hero.container .action {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#projects.container {
+    padding: 0 2.5rem;
+}
+
+#projects .subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#projects .description {
+    padding: 1rem 3rem 4rem;
+}
+
+#projects .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#projects .area ul li {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#projects img {
+    width: 100%;
+    display: block;
+}
+
+#personal.container {
+    background-image: url('/assets/fc45ad_08ea06e7a3344a76b9603636c7a9e0c6_mv2.webp');
+    background-size: 100%;
+}
+
+#personal.container {
+    background-image: url('/assets/fc45ad_08ea06e7a3344a76b9603636c7a9e0c6_mv2.webp');
+    background-size: 100%;
+}
+
+#personal.container .row {
+    background: #00000055;
+    padding: 6rem 2.5rem;
+}
+
+#personal.container .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+#personal.container .description {
+    font-size: 1rem;
+}
+
+#contact form {
+    width: 100%;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@media all and (min-width: 768px) {
+    #projects img {
+        display: none;
+    }
+    #projects .project .col.image {
+        background-image: url('/assets/fc45ad_2c0b3bfb97644b969d83ed3ade64fbcf_mv2.webp');
+        background-size: cover;
+        width: 100%;
+    }
+    #projects.container {
+        padding: 0;
+    }
+    #projects .project {
+        display: flex;
+    }
+    #projects .image {
+        flex: 1 1 65%;
+    }
+    #projects .description {
+        flex: 0 0 35%;
+        padding: 8rem 8vw;
+        min-height: 22rem;
+        display: flex;
+        flex-flow: row wrap;
+        place-content: center flex-start;
+    }
+    #projects .project:nth-child(even) .col.image {
+        order: 2;
+    }
+    #hero.container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #hero.container .col {
+        flex-basis: 50%;
+        padding: 8rem 8vw;
+    }
+}
