@@ -101,7 +101,7 @@ ul {
 
 #personal.container .row {
     background: #00000055;
-    padding: 6rem 2.5rem;
+    padding: 12rem 2.5rem;
 }
 
 #personal.container .title {
@@ -175,5 +175,52 @@ ul {
         font-weight: 600;
         line-height: 1.25em;
         word-wrap: break-word;
+    }
+    #personal.container .row {
+        padding: 15remm 2.5rem;
+    }
+    #personal.container .col {
+        width: 40%;
+        min-width: 500px;
+        margin: 0 auto;
+    }
+    #personal.container .title {
+        font-size: 4.5rem;
+        font-weight: 600;
+        line-height: 1em;
+        margin-bottom: 2rem;
+    }
+    #contact.container .row {
+        display: flex;
+    }
+    #contact.container .row .col {
+        flex: 1 1 50%;
+    }
+    #contact.container .row .contact-form {
+        padding: 8rem 8vw;
+    }
+    #contact.container .contact-form .title {
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 1em;
+    }
+    #contact.container .contact-form .description {
+        font-size: 1rem;
+        padding: 2rem 0;
+    }
+    #contact.container .contact-form form input,
+    #contact.container .contact-form form textarea {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid white;
+    }
+    #contact.container .contact-form form input:hover,
+    #contact.container .contact-form form textarea:hover {
+        border: 1px solid white!important;
+    }
+    #contact.container .contact-form form input[type="submit"] {
+        width: 100%;
     }
 }
